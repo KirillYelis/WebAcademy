@@ -9,10 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./img/phone-2.svg" />
 
     <title>Prantice 5</title>
   </head>
   <body>
+    <!--Header START-->
     <header class="header">
       <div class="wrapper">
         <div class="header__wrapper">
@@ -21,8 +23,8 @@
           </div>
           <div class="header__nav">
             <nav class="header__menu">
-              <a href="#!" class="menu__link">Benefit</a>
-              <a href="#!" class="menu__link">Pricing</a>
+              <a href="#benefits" class="menu__link">Benefit</a>
+              <a href="#prices_link" class="menu__link">Pricing</a>
               <a href="#!" class="menu__link">Testimonials</a>
               <a href="#!" class="menu__link">Client</a>
             </nav>
@@ -54,10 +56,12 @@
     <!--Header End-->
 
     <main class="main">
+      <!--INTRO SECTION START-->
+
       <section class="intro">
         <div class="wrapper">
           <div class="intro__wrap">
-            <div class="card">
+            <div id="benefits" class="card">
               <div class="pic">
                 <img src="./img/secure.svg" alt="" class="intro-logo" />
               </div>
@@ -96,9 +100,112 @@
         </div>
       </section>
 
+      <!--INTRO SECTION END-->
+
+      <!--PRICES SECTION START-->
+
       <section class="plans">
-        <div class="plans-empty"></div>
+        <div class="wrapper">
+          <div class="section__prices">
+            <div class="section__title">
+              <h2 class="plans__title">
+                Paid plan starts with a 7-day free trial, No credit card
+                required
+              </h2>
+            </div>
+
+            <div class="plans__btns">
+              <a href="#!" class="monthly">monthly</a>
+              <a href="#!" class="yearly">yearly - 2 months free</a>
+            </div>
+
+            <div class="plans__prices" id="prices_link">
+              <div class="plan__card">
+                <h3>starter</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">10</span>
+                </div>
+                <span class="period">Per Month</span>
+                <div class="benefits">
+                  <ul class="benefits__list">
+                    <li class="benefits__item">1 Pixel ID*</li>
+                    <li class="benefits__item">URL</li>
+                    <li class="benefits__item">
+                      Up to 200 shortened links <br />/ month
+                    </li>
+                  </ul>
+                </div>
+                <div class="plan-btn">
+                  <a href="#!" class="sign-up">start free trial</a>
+                </div>
+              </div>
+
+              <div class="plan__card">
+                <h3>professional</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">29</span>
+                </div>
+                <span class="period">Per Month</span>
+                <div class="benefits">
+                  <ul class="benefits__list">
+                    <li class="benefits__item">5 Pixels ID*</li>
+                    <li class="benefits__item">Custom URL</li>
+                    <li class="benefits__item">
+                      Up to 1000 shortened links <br />/ month
+                    </li>
+                    <li class="benefits__item">5 Team Members</li>
+                  </ul>
+                </div>
+                <div class="plan-btn plan-btn2">
+                  <a href="#!" class="sign-up">start free trial</a>
+                </div>
+              </div>
+
+              <div class="plan__card">
+                <h3>Business</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">49</span>
+                </div>
+                <span class="period">Per Month</span>
+                <div class="benefits">
+                  <ul class="benefits__list">
+                    <li class="benefits__item">1 Pixel ID*</li>
+                    <li class="benefits__item">URL</li>
+                    <li class="benefits__item">
+                      Up to 200 shortened links <br />/ month
+                    </li>
+                  </ul>
+                </div>
+                <div class="plan-btn">
+                  <a href="#!" class="sign-up">start free trial</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!--PRICES SECTION END-->
+
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="footer__credits">
+            <span>© 2018 autocryp All Right Reserved</span>
+          </div>
+
+          <div class="footer__links">
+            <span><a href="#benefits" class="footer_link">Benefit</a>/</span>
+            <span><a href="#prices_link" class="footer_link">Pricing</a>/</span>
+            <span><a href="#!" class="footer_link">Testimonials</a>/</span>
+            <span><a href="#!" class="footer_link">Clients</a></span>
+          </div>
+        </div>
+      </footer>
+
+      <!--FOOTER END-->
     </main>
   </body>
 </html>

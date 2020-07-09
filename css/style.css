@@ -3,26 +3,43 @@
     
 }
 
+html   {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size; 16px;
+  background: #F2F2F2;
 }
+
 
 a {
-    text-decoration: none;
+text-decoration: none;
 }
 
+.wrapper {
+max-width: 1257px;
+margin: 0 auto;
+position: relative;
+}
+
+/*<!--Header STYLE START-->*/
+
 .header {
-      
-    background: #313A5A;
+background: #313A5A;
+
 }
 
 .header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 9px 0 9px;
-    align-items: center;  
+display: flex;
+justify-content: space-between;
+padding: 25px 9px 0 9px;
+align-items: center;
+width: 1250px;  
+position: fixed;
+z-index: 2;
 
 }
 
@@ -32,13 +49,6 @@ display: flex;
 
 .header__menu {
 display: flex;
-    }
-
-
-.wrapper {
-max-width: 1257px;
-margin: 0 auto;
-position: relative;
 }
 
 
@@ -48,7 +58,10 @@ font-size: 16px;
 line-height: 34px;
 color: #FFFFFF;
 margin-left: 35px;
+}
 
+.menu__link:hover {
+    border-bottom: 1px solid #1FDB84;
 }
 
 .login { 
@@ -72,14 +85,25 @@ width: 120px;
 height: 40px;
 }
 
-.header__main   {
+.register__btn:hover {
+    transform: scale(1.05);
+}
+
+.header__main {
 display: flex;
 justify-content: space-between;
 position: relative;
 }
 
 .header__left {
-    padding-left: 9px;
+padding-left: 9px;
+}
+
+.header__right {
+margin-top: 55px;
+margin-right: 78px;
+z-index: 0;
+margin-top: 128px;
 }
 
 .header__title {
@@ -102,6 +126,10 @@ color: #FFFFFF;
 width: 558px;
 }
 
+.header__buttons {
+margin-right: 0;
+}
+
 .header__btn {
 font-family: 'Rubik';
 font-style: normal;
@@ -118,31 +146,31 @@ height: 60px;
 margin-top: 55px;
 }
 
-.header__right {
-margin-top: 55px;
-margin-right: 37px;
+.header__btn:hover {
+    transform: scale(1.05);
 }
+
+/*HEADER STYLE END*/
+
+/*INTRO STYLE START*/
 
 .intro__wrap {
 width: 1257px;
 height: 420px;
 display: flex;
-position: absolute;
 background: #FFFFFF;
 box-shadow: 0px 10px 34px rgba(210, 210, 210, 0.5);
 border-radius: 10px;
 justify-content: space-around;
-top: 110px;
-transform: translateY(-50%);
-margin-bottom: 200px;
+margin-top: -110px;
 }
 
 .card {
-   padding-top: 66px; 
+padding-top: 66px; 
 }
 
 .card > h3 {
-font-family: Rubik;
+font-family: "Rubik";
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -184,8 +212,215 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+/*INTRO STYLE END*/
+
+/*Plans section START*/
+
+.plans {
+margin-top: 200px;
+margin-bottom: 100px;
+}
+
+.section__prices {
+text-align: center;
+}
+
+.section__title {
+width: 810px;
+text-align: center;
+margin: 0 auto;
+
+}
+
+.plans__title {
+font-family: "Rubik";
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 64px;
+color: #32325C;
+}
+
+
+.plans__btns {
+margin-top: 60px;
+font-size: 0;
+}
+
+.monthly {
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+color: #1FDB84;
+background: #FFFFFF;
+border: 1px solid #AEFDD9;
+border-radius: 5px 0px 0px 5px;
+padding: 21px 36px 21px 37px;
+border-bottom: none;
+border-top: none;
+border-left: none;
+}
+
+
+.yearly {
+font-family: "Rubik";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+color: #6FDEAA;
+background: #F1FFF8;
+border: 1px solid #AEFDD9;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+padding: 21px 31px 21px 41px;
+border-bottom: none;
+border-top: none;
+border-right: none;
+}
+
+.monthly:hover {
+background-color: #eeeeeb;
+}
+
+.yearly:hover {
+background-color: #eeeeeb;
+}
+
+
+.plans__prices {
+padding-top: 120px;
+display: flex;
+font-size: 0;
+justify-content: center
+}
+
+.plan__card {
+width: 378px;
+height: 665px;
+}
+
+.plan__card > h3 {
+font-family: "Rubik";
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.266667px;
+color: #32325C;
+text-transform: capitalize;
+padding-top: 56px;
+}
+
+.plan__card:hover {
+background: #FFFFFF;
+box-shadow: 0px 7px 24px rgba(83, 83, 83, 0.1);
+border-top: 2px solid #0A8AFF;;
+}
+
+.price {
+padding-top: 31px;
+}
+.price > span {
+font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 64px;
+color: #1FDB84;
+}
+
+.period {
+display: inline-block;
+font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+color: #5B6C94;
+padding-top: 13px;
+}
+
+.benefits {
+padding-top: 60px;
+}
+.benefits__list {
+}
+.benefits__item {
+font-family: "Rubik";
+padding-top: 17px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+color: #5B6C94;
+}
 
 
 
+.sign-up {
+font-family: "Rubik";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 1px;
+color: #FFFFFF;
+background: #1FDB84;
+box-shadow: 0px 8px 34px rgba(31, 219, 132, 0.6);
+border-radius: 5px 0px;
+padding: 21px 47px;
+text-transform: uppercase;
+}
 
+.plan-btn {
+margin-top: 100px;
+}
+
+.plan-btn:hover {
+transform: scale(1.05);
+}
+
+.plan-btn2 {
+margin-top: 52px;
+}
+
+/*Plans section END*/
+
+/*FOOTER STYLE START*/
+
+.footer {
+margin-bottom: 100px;
+text-align: center;
+}
+
+.footer__credits > span {
+display: block;
+font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+color: #5B6C94;
+}
+
+.footer__links {
+margin-top: 50px;
+}
+
+.footer_link{
+margin: 0 30px 0 30px;
+}
+
+.footer__links > span > a{
+font-family: "Rubik";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 32px;
+color: #5B6C94;
+}
 
